@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, NavLink } from 'react-router-dom';
 
 
 
@@ -29,23 +30,24 @@ function NavBar(props) {
         </h1>
       </div>
 
+
       <div className="lg:flex hidden mt-3">
   <ul className="flex justify-center flex-row gap-9 m-3">
-    <li className="bg-[#9681EB] hover:bg-[#9681EB] h-12 flex items-center justify-center rounded-xl w-28">
-      <button className="text-white font-medium focus:outline-none">
+    <NavLink to="/products"  className="bg-[#9681EB] hover:bg-[#9681EB] h-12 flex items-center justify-center rounded-xl w-28">
+      <p className="text-white font-medium focus:outline-none">
         Services
-      </button>
-    </li>
-    <li className="bg-[#9681EB] hover:bg-[#9681EB] h-12 flex items-center justify-center rounded-xl w-28">
-      <button className="text-white font-medium focus:outline-none">
+      </p>
+    </NavLink >
+    <NavLink  to="/products" className="bg-[#9681EB] hover:bg-[#9681EB] h-12 flex items-center justify-center rounded-xl w-28">
+      <p className="text-white font-medium focus:outline-none">
         Contacts
-      </button>
-    </li>
-    <li className="bg-[#9681EB] hover:bg-[#9681EB] h-12 flex items-center justify-center rounded-xl w-28">
-      <button className="text-white font-medium focus:outline-none">
+      </p>
+    </NavLink >
+    <NavLink to="/products" className="bg-[#9681EB] hover:bg-[#9681EB] h-12 flex items-center justify-center rounded-xl w-28">
+      <p className="text-white font-medium focus:outline-none">
         About Us
-      </button>
-    </li>
+      </p>
+    </NavLink >
   </ul>
 </div>
 
