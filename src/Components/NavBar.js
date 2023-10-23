@@ -10,7 +10,7 @@ function NavBar(props) {
   //   SetShow(!show)
   // }
   return (
-    <div className="grid lg:grid-cols-4 grid-cols-3">
+    <div className="flex justify-around">
       <div>
         <h1 className="lg:text-2xl m-2">
           <span className="text-4xl text-[#6527BE font-extrabold">GS</span>
@@ -19,7 +19,7 @@ function NavBar(props) {
         </h1>
       </div>
 
-      <div>
+      <div className='flex justify-center text-center'>
         <h1 className="text-gray-500 m-2 lg:text-sm text-[10px]">
           Contact us <br />
           <span>
@@ -30,26 +30,6 @@ function NavBar(props) {
         </h1>
       </div>
 
-
-      <div className="lg:flex hidden mt-3">
-  <ul className="flex justify-center flex-row gap-9 m-3">
-    <NavLink to="/products"  className="bg-[#9681EB] hover:bg-[#9681EB] h-12 flex items-center justify-center rounded-xl w-28">
-      <p className="text-white font-medium focus:outline-none">
-        Services
-      </p>
-    </NavLink >
-    <NavLink  to="/products" className="bg-[#9681EB] hover:bg-[#9681EB] h-12 flex items-center justify-center rounded-xl w-28">
-      <p className="text-white font-medium focus:outline-none">
-        Contacts
-      </p>
-    </NavLink >
-    <NavLink to="/products" className="bg-[#9681EB] hover:bg-[#9681EB] h-12 flex items-center justify-center rounded-xl w-28">
-      <p className="text-white font-medium focus:outline-none">
-        About Us
-      </p>
-    </NavLink >
-  </ul>
-</div>
 
 
       <div className="flex justify-center">

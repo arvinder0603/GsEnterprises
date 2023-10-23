@@ -12,8 +12,8 @@ export const Products = () => {
     
     <div>
       <div className='flex justify-center items-center gap-4'>
-      <h2 className='flex justify-center font-extrabold text-[60px]  text-[#157d8d] mb-6'>Our Products</h2>
-      <Link to="/products"  className='bg-[#157d8d] w-[120px] h-[50px] rounded-2xl shadow-2xl font-bold'>
+      <h2 className='flex justify-center lg:text-[60px] text-[40px]  font-extrabold text-[#7a5df1] mb-6'>Our Products</h2>
+      <Link to="/products"  className='bg-[#9681EB] w-[120px] h-[50px] rounded-2xl shadow-2xl font-bold'>
         <h1 className='flex justify-center mt-3 text-white'>
         Products
           </h1></Link >

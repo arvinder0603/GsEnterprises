@@ -111,7 +111,7 @@
               {
                 "name": "Body",
                 "description": "User friendly, compact and latest designed 45° inclined stable coaxial body with epoxy finish paint.",
-                "image":"https://drive.google.com/file/d/1tT0tn_VoMNQksPmhQBAh1Hz4NvLntCfi/view?usp=drive_link"
+                "image":"https://th.bing.com/th/id/OIP.r-pQeUC67IYlGwj8gEDOrQHaHa?w=250&h=250&c=7&r=0&o=5&dpr=1.5&pid=1.7"
               },
               {
                 "name": "Observation Head",
@@ -211,7 +211,7 @@
               {
                 "name": "Body",
                 "description": "User friendly, compact and latest designed 45° inclined stable coaxial body with epoxy finish paint.",
-                "image":"https://drive.google.com/file/d/188PpZufLjNKnUYJuJlr9pY4FspoSuyKP/view?usp=drive_link"
+                "image":"https://raw.githubusercontent.com/arvinder0603/IMaGES-DATA/main/pr6.jpg"
               },
               {
                 "name": "Observation Head",

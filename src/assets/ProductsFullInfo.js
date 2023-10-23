@@ -1,7 +1,7 @@
 const FullInfo = [
     {
       "category": "Coxial Microscope",
-      "image": "https://drive.google.com/file/d/1HPyDqi2L_I7KFT_BAFur4u1BbYXS9uza/view?usp=drive_link",
+      "image": "https://3.imimg.com/data3/TB/IP/MY-4921/coaxial-binocular-microscope-1000x1000.jpg",
       "subcategories": [
         {
           "body": {
@@ -39,7 +39,7 @@ const FullInfo = [
     },
     {
       "category": "Binocular Microscope",
-      "image": "https://drive.google.com/file/d/1HPyDqi2L_I7KFT_BAFur4u1BbYXS9uza/view?usp=drive_link",
+      "image": "https://th.bing.com/th/id/OIP.7dVTj99kp1WpLxHC1eXGvwHaHa?w=250&h=250&c=7&r=0&o=5&dpr=1.5&pid=1.7",
       "subcategories": [
         {
           "body": {
@@ -77,7 +77,7 @@ const FullInfo = [
     },
      {
       "category": "Medical Microscope",
-      "image": "https://drive.google.com/file/d/1HPyDqi2L_I7KFT_BAFur4u1BbYXS9uza/view?usp=drive_link",
+      "image": "https://static1.industrybuying.com/products/lab-supplies/laboratory-equipments/microscopy/microscopes/LA.MI.1514845_1667920357285.webp",
       "subcategories": [
         {
           "body": {
@@ -117,7 +117,7 @@ const FullInfo = [
     },
     {
       "category": "Hot plate",
-      "image": "https://drive.google.com/file/d/1HPyDqi2L_I7KFT_BAFur4u1BbYXS9uza/view?usp=drive_link",
+      "image": "https://raw.githubusercontent.com/arvinder0603/IMaGES-DATA/main/pr6.jpg",
       "subcategories": [
         {
           "body": {

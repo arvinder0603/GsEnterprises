@@ -1,117 +1,45 @@
-import {
-    Drawer,
-    DrawerBody,
-    DrawerContent,
-    DrawerHeader,
-    DrawerOverlay,
-    DrawerCloseButton,
-    useDisclosure,
-    Button,
-  } from '@chakra-ui/react';
-  import Binocular from '../assets/Binocular.jpg'
-  import React from 'react'
+import React from 'react';
+import FullInfo from '../assets/ProductsFullInfo'; // Assuming FullInfo is in the same directory
 
-  import { useState } from 'react';
-  
-  const ProductsCard = ({ Fullinfo }) => {
-    const [size, setSize] = useState('');
-    const { isOpen, onOpen, onClose } = useDisclosure();
-  
-    const handleClick = (newSize) => {
-      setSize(newSize);
-      onOpen();
-    };
-  
-    const sizes = ['full'];
-  
-    return (
-      <>
-        {sizes.map((size) => (
-          <Button onClick={() => handleClick(size)} key={size} m={4} height={'60px'} >
-            <h1 className='text-[30px] font-extrabold'>
+const MicroscopeList = () => {
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+      {FullInfo.map((category, index) => (
+        <div key={index} className="bg-white rounded-lg shadow-lg p-6">
+          <img 
+            src={category.image} 
+            alt={category.category} 
+            className="w-full  h-[380px] mb-4 rounded"
+          />
+          <h2 className="text-2xl font-bold mb-2 text-blue-600">
+            {category.category}
+          </h2>
+          {category.subcategories.map((subcategory, subIndex) => (
+            <div key={subIndex} className="mb-4">
+              <h3 className="text-xl font-semibold mb-2">
+             
+              </h3>
+              <ul className="list-disc pl-4 mb-2">
+                {Object.keys(subcategory).map((section, sectionIndex) => (
+                  <li key={sectionIndex} className="mb-1">
+                    <strong>{section.replace('_', ' ')}:</strong> {subcategory[section].description}
+                  </li>
+                ))}
+              </ul>
+              <div>
+                <strong>Accessories:</strong>
+                <ul className="list-disc pl-4">
+                  {subcategory.accessories.map((accessory, accessoryIndex) => (
+                    <li key={accessoryIndex} className="mb-1">{accessory}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          ))}
+        </div>
+      ))}
+    </div>
+  );
+};
 
-            Click me
-            
-            </h1>
-          
-          </Button>
-        ))}
-  
-        <Drawer onClose={onClose} isOpen={isOpen} size={size} >
-          <DrawerOverlay />
-          <DrawerContent>
-            <DrawerCloseButton />
-            {Fullinfo.map((item) => (
-              <React.Fragment key={item.category}>
-                <DrawerHeader><h1 className='font-bold text-[30px]'>
-                {item.category}
-                  </h1></DrawerHeader>
-                <DrawerBody>
-                  <div className="shadow-2xl items-center bg-gray-200">
-                  
-                    <div className="grid grid-cols-2 ">
-                      <h1 className='text-[20px] font-semibold'>Details</h1>
-                      <img className='h-[300px] w-[300px] flex justify-end' src={Binocular} alt="/" />
-                    </div>
-  
-                    <div>
-                      <div>
-                        <h1 className="font-bold text-[20px]">Body</h1>
-                        <h1>{item.subcategories[0].body.description}</h1>
-                      </div>
-                      <div>
-                        <h1 className="font-bold text-[20px]">Observation Head</h1>
-                        <h1>{item.subcategories[0].observation_head.description}</h1>
-                        <h2>Interpupillary Distance: {item.subcategories[0].observation_head.interpupillary_distance}</h2>
-                      </div>
-                      <div>
-                        <h1 className="font-bold text-[20px]">Nose Piece</h1>
-                        <h1>{item.subcategories[0].nose_piece.description}</h1>
-                      </div>
-                      <div>
-                        <h1 className="font-bold text-[20px]">Specimen Stage</h1>
-                        <h1>{item.subcategories[0].specimen_stage.description}</h1>
-                      </div>
-                      <div>
-                        <h1 className="font-bold text-[20px]">Condenser</h1>
-                        <h1>{item.subcategories[0].condenser.description}</h1>
-                      </div>
-                      <div>
-                        <h1 className="font-bold text-[20px]">Focusing System</h1>
-                        <h1>{item.subcategories[0].focusing_system.description}</h1>
-                      </div>
-                      <div>
-                        <h1 className="font-bold text-[20px]">Light Source</h1>
-                        <h1>{item.subcategories[0].light_source.description}</h1>
-                      </div>
-                      <div>
-                        <h1 className="font-bold text-[20px]">Objectives</h1>
-                        <h1>{item.subcategories[0].objectives.description}</h1>
-                      </div>
-                      <div>
-                        <h1 className="font-bold text-[20px]">Eyepiece</h1>
-                        <h1>{item.subcategories[0].eyepiece.description}</h1>
-                      </div>
-                      <div>
-                        <h1 className="font-bold text-[20px]">Accessories</h1>
-                        {item.subcategories[0].accessories.map((accessory, index) => (
-                          <h1 key={index}>{accessory}</h1>
-                        ))}
-                      </div>
-                      <div>
-                        <h1 className="font-bold text-[20px]">Packing</h1>
-                        <h1>{item.subcategories[0].packing}</h1>
-                      </div>
-                    </div>
-                  </div>
-                </DrawerBody>
-              </React.Fragment>
-            ))}
-          </DrawerContent>
-        </Drawer>
-      </>
-    );
-  };
-  
-  export default ProductsCard;
-  
+export default MicroscopeList;

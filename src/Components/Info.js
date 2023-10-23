@@ -4,18 +4,18 @@ function Info() {
   return (
     <div className="flex lg:flex-row flex-col mt-12">
 
-      <div className='flex justify-center items-center'>
-        <img className='flex rounded-2xl shadow-2xl' src={im5} alt='/'></img>
+      <div className='flex justify-center items-center object-contain m-6'>
+        <img className='rounded-2xl shadow-2xl ' src={im5} alt='/'></img>
       </div>
 
 
       <div className='flex justify-center items-center flex-col  gap-y-7 '>
      
-          <span className='text-[#6527BE] lg:text-[32px] text-[20px] font-bold  '>
-            Introducing GS Enterprises: <span className='text-[#9681EB]  '>  Revolutionizing Scientific Equipment Solutions</span>
+          <span className='text-[#6527BE] lg:text-[32px] text-[20px] font-bold text-center '>
+            Introducing GS Enterprises: <span className='text-[#9681EB]  text-center'>  Revolutionizing Scientific Equipment Solutions</span>
           </span> 
 
-        <h1 className='lg:text-[18px] text-[12px]  items-center'>
+        <h1 className='lg:text-[18px] text-[12px]  items-center text-center'>
 
           <br />
 
