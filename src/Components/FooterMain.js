@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom'
 
 const FooterMain = () => {
     return (
-        <footer className="bg-blue-100/80 font-sans dark:bg-gray-900 mt-12">
+        <footer className="bg-blue-100/80 font-sans  mt-12">
             <div className="container px-6 py-12 mx-auto">
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-3">
 
                     <div>
-                        <p className="font-semibold text-gray-800 dark:text-white">Quick Link</p>
+                        <p className="font-semibold text-gray-800 ">Quick Link</p>
 
                         <div className="flex flex-col items-start mt-5 space-y-2">
                             <Link to="/products"> <p className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">Home</p></Link>
@@ -18,7 +18,7 @@ const FooterMain = () => {
                     </div>
 
                     <div>
-                        <p className="font-semibold text-gray-800 dark:text-white">Gs Enterprises</p>
+                        <p className="font-semibold text-gray-800 ">Gs Enterprises</p>
 
                         <div className="flex flex-col items-start mt-5 space-y-2">
                             <h1 className='  text-[16px]  '>
@@ -39,7 +39,7 @@ const FooterMain = () => {
                     </div>
 
                     <div>
-                    <p className="font-semibold text-gray-800 dark:text-white">Contact Us </p>
+                    <p className="font-semibold text-gray-800 ">Contact Us </p>
                         <h1 className='text-[16px]  mt-2 '>
                             Mr Gurpreet singh
                             <br />
