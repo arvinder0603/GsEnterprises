@@ -34,11 +34,20 @@ export const ProductsPage = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 mt-16 gap-8 px-4">
         <div className="text-center">
           <h1 className="text-4xl font-extrabold underline">Contacts</h1>
-          <h1 className="text-xl font-semibold mt-8">
-            Mr Gurpreet Singh<br />
-            +91 8999999129<br />
-            +91 9896388796
-          </h1>
+          <div className="text-xl font-semibold mt-8">
+            <span>
+              <span className="font-bold">Mr Gurpreet Singh</span>
+              <br />
+              +91 9896388796
+            </span>
+            <br/>
+            <span>
+              <span className="font-bold">Alternate Number</span>
+              <br />
+              +91 8999999129
+            </span>
+          </div>
+
           <FloatingWhatsApp accountName='Gurpreet Singh' phoneNumber='+919896388796' />
         </div>
         <div className="text-center">

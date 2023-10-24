@@ -34,7 +34,7 @@ function NavBar(props) {
 
 
       <div className="flex justify-center">
-        <button onClick={props.setHandler} className="bg-[#6527BE] text-white  w-36 h-16 mt-3 rounded-2xl font-semibold">
+        <button onClick={props.setHandler} className="bg-[#6527BE] text-white  w-36 h-16 mt-3 m-4 rounded-2xl font-semibold">
           Products
         </button>
 
