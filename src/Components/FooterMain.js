@@ -72,6 +72,13 @@ const FooterMain = () => {
 
             </div>
 
+            <div className='flex justify-end'> 
+                <h1>Developed by: Arvinder singh
+                <br/>
+                <a href='https://arvinder-portfolio.vercel.app/' className='outline outline-1 rounded-lg'>CONTACT</a>
+                 </h1>
+            </div>
+
         </footer>
     )
 }
