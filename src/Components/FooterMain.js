@@ -26,13 +26,14 @@ const FooterMain = () => {
                                 <br />
                                 GSTIN: 06CKBPS7206R1ZK
                                 <br />
-                                A/c No: 41785306484
-                                <br />
-                                IFSC:SBIN0014633
-                                <br />
-                                State Bank of India
-                                <br />
                                 gsenterprises876@gmail.com
+
+                                <br></br>
+                                Shop no: 8 Nirmal Vihar near Ekta vihar
+                                <br/>
+                                 Ambala Cantt
+                                 <br/>
+                                 Haryana 
 
                             </h1>
                         </div>
@@ -43,10 +44,12 @@ const FooterMain = () => {
                         <h1 className='text-[16px]  mt-2 '>
                             Mr Gurpreet singh
                             <br />
+
+                            +91 9896388796
+                           
+                            <br />
                             +91 8999999129
 
-                            <br />
-                            +91 9896388796
                         </h1>
                     </div>
 

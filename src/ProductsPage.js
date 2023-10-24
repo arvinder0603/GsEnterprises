@@ -44,12 +44,21 @@ export const ProductsPage = () => {
         <div className="text-center">
           <h1 className="text-4xl font-extrabold underline">Company Details</h1>
           <h1 className="mt-8 text-xl">
-            GS Enterprises<br />
-            GSTIN: 06CKBPS7206R1ZK<br />
-            A/c No: 41785306484<br />
-            IFSC: SBIN0014633<br />
-            State Bank of India<br />
-            gsenterprises876@gmail.com
+            <h1 className='  text-[16px]  '>
+              GS Enterprises
+              <br />
+              GSTIN: 06CKBPS7206R1ZK
+              <br />
+              gsenterprises876@gmail.com
+
+              <br></br>
+              Shop no: 8 Nirmal Vihar near Ekta vihar
+              <br />
+              Ambala Cantt
+              <br />
+              Haryana
+
+            </h1>
           </h1>
         </div>
       </div>
